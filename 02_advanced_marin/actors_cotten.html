@@ -14,33 +14,48 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Citizen Kane</a>
+      <a class="navbar-brand" href="index.html">Citizen Kane</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plot.html">Plot</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="plot.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plot
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="plot.html">Plot Overview</a>
+              <a class="dropdown-item" href="plot_sources.html">Sources</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="actors.html">Actors</a>
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="actors.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="actors.html">Actors Overview</a>
+              <a class="dropdown-item" href="actors_welles.html">Orson Welles</a>
+              <a class="dropdown-item" href="actors_cotten.html">Joseph Cotten</a>
+              <a class="dropdown-item" href="actors_comingore.html.html">Dorothy Comingore</a>
+            </div>
           </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Production
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="casting.html">Casting</a>
-          <a class="dropdown-item" href="filming.html">Filming</a>
-          <a class="dropdown-item" href="post-production.html">Post-production</a>
-        </div>
-      </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="production.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Production
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="production.html">Production Overview</a>
+              <a class="dropdown-item" href="production_casting.html">Casting</a>
+              <a class="dropdown-item" href="production_filming.html">Filming</a>
+              <a class="dropdown-item" href="production_post-production.html">Post-production</a>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,12 +63,21 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
-        <div class="list-group py-4">
-          <a href="actors_welles.html" class="list-group-item">Orson Welles</a>
-          <a href="actors_cotten.html" class="list-group-item">Joseph Cotten</a>
-          <a href="actors_comingore.html" class="list-group-item">Dorothy Comingore</a>
-        </div>
+      <div class="col-lg-3 my-4">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="actors.html">Actors Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="actors_welles.html">Orson Welles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="actors_cotten.html">Joseph Cotten</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="actors_comingore.html">Dorothy Comingore</a>
+          </li>
+        </ul>
       </div>
 
       <div class="col-lg-9">
